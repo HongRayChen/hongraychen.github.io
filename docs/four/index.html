@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four | CS559: Workbook 4</title>
+
+
+<link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
+
+
+
+
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="">CS559: Workbook 4</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2f four\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/"><strong>Introduction</strong></a></li>
+<li><a href="/docs/one/">Page 1: Math vs. Code</a></li>
+<li><a href="/docs/two/">Page 2: Linear, Affine, Projective</a></li>
+<li><a href="/docs/three/">Page 3: Matrices in Code</a></li>
+<li><a href="/docs/four/">Page 4: Matrix Exercises</a></li>
+<li><a href="/docs/five/">Page 5: Programming Assignment</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Four</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h2 id="matrix-exercises">Matrix Exercises</h2>
+
+<p>Over the past few pages, you saw the connection between the math of transformations and the code we write to draw using Canvas. On this page, you&rsquo;ll get to try writing some code to test it out.</p>
+
+<p>For this page, you should edit the file <code>for_students/4-Matrix-Exercise.js</code>. The functions you have to change are at the beginning of the file. Feel free to read the rest of the code - but please don&rsquo;t change it.</p>
+
+<h2 id="exercise-1-two-dots-two-ways">Exercise 1: Two Dots, Two Ways</h2>
+
+<p>Given two points, we want to map the square (0,0) - (10,10) such that the (0,0) corner appears at the first point, and top right corner (10,0) appears at the second point. The square should remain a square - it can turn and stretch uniformly, but it should not reflect (notice that the insides of the square are not symmetric).</p>
+
+<canvas id="twodots1" height="200" width="200"></canvas>
+
+<p>I wrote some UI code that draws the square, and draw a red dot for the first point and a green dot for the second point, and lets you move the points around. All you need to do is fill in the function <code>twoDots1</code> with the code that performs the transformation. It should consist of calls to <code>context.translate</code>, <code>context.rotate</code>, and <code>context.scale</code>. I put in a <code>context.translate</code> just to get you started. You can drag around the dots to make sure your code works (the graders will do it).</p>
+
+<p>Here are some snapshots of what this looks like when it is working.</p>
+
+<p><img src="/Images/td0_1.png" alt="td1_ex1" /> <img src="/Images/td0_2.png" alt="td1_ex2" /> <img src="/Images/td0_3.png" alt="td1_ex3" /></p>
+
+<p>Now, do that again, but this time do it using <code>context.transform</code> - compute the 6 numbers that need to be passed. Do this in the <code>twoDots2</code> function. I put some example values in that don&rsquo;t work correctly.</p>
+
+<canvas id="twodots2" height="200" width="200"></canvas>
+
+<h2 id="exercise-2-two-dots-a-little-harder">Exercise 2: Two Dots, a Little Harder</h2>
+
+<p>This is same as box 1 - except that the corner opposite the upper left (e.g., the 10,10 corner) should appear at the green dot. Your choice how you make the transformation - but make sure it keeps the square a square. The function to edit is <code>twoDots3</code>.</p>
+
+<canvas id="twodots3" height="200" width="200"></canvas>
+
+<p>Here are some snapshots of what this looks like when it is working:</p>
+
+<p><img src="/Images/td2_0.png" alt="td2_ex1" /> <img src="/Images/td2_1.png" alt="td2_ex2" /> <img src="/Images/td2_2.png" alt="td2_ex3" /></p>
+
+<h2 id="exercise-3-convert-to-transform">Exercise 3: Convert to Transform</h2>
+
+<p>In the code for this box (<code>drawBox3</code>), each of the squares is placed by a sequence of rotate, translate, and scale commands. Replace these with a single <code>transform</code> command that does the same thing. You should comment out all of the rotate, translate, and scale calls in <code>drawBox2</code>, and put proper numbers into the transform calls. The picture shouldn&rsquo;t change at all. Pay attention to the dots in the square.</p>
+
+<canvas id="box3canvas" height="200" width="400"></canvas>
+
+<h2 id="exercise-4-shear-skew">Exercise 4: Shear/Skew</h2>
+
+<p>Shear (sometimes called skew) is a fundamental linear transformation. It is discussed in both textbooks, but specifically <a href="https://canvas.wisc.edu/files/9233745">Section 6.1.2 of Fundamentals of Computer Graphics</a>. Unfortunately, Canvas doesn&rsquo;t have it.</p>
+
+<p>Put &ldquo;shear-x&rdquo; transformation into the <code>shearX</code> function in <code>4-Matrix-Exercises.html</code>. The code for the following Canvas calls that function to test it. Since the <code>shearX</code> does nothing right now, you see squares here. If you implement things correctly, you should see sheared boxes. The test code does save and restore - you should make <code>shearX</code> work like <code>context.rotate</code>, except that its a function not a method.</p>
+
+<canvas id="box4shearX" width="400px" height="200px"></canvas>
+
+<h2 id="summary">Summary</h2>
+
+<p>That was a little math programming. Now on to the <a href="/docs/five/">next page</a>.</p>
+
+<script src="/for_students/4-Matrix-Exercise.js" type="module"></script>
+
+<style>
+    canvas {
+        border: 2px solid black;
+    }
+    svg {
+        border: 2px solid black;
+    }
+</style>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#matrix-exercises">Matrix Exercises</a></li>
+<li><a href="#exercise-1-two-dots-two-ways">Exercise 1: Two Dots, Two Ways</a></li>
+<li><a href="#exercise-2-two-dots-a-little-harder">Exercise 2: Two Dots, a Little Harder</a></li>
+<li><a href="#exercise-3-convert-to-transform">Exercise 3: Convert to Transform</a></li>
+<li><a href="#exercise-4-shear-skew">Exercise 4: Shear/Skew</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>
