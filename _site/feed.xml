@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-25T13:47:57-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Stingray Designs</title><author><name>Stingray</name></author><entry><title type="html">3D Model Loading</title><link href="http://localhost:4000/blogs/20211024_3dmodel/blog/2021/10/24/3DModel.html" rel="alternate" type="text/html" title="3D Model Loading" /><published>2021-10-24T20:00:00-04:00</published><updated>2021-10-24T20:00:00-04:00</updated><id>http://localhost:4000/blogs/20211024_3dmodel/blog/2021/10/24/3DModel</id><content type="html" xml:base="http://localhost:4000/blogs/20211024_3dmodel/blog/2021/10/24/3DModel.html">&lt;p&gt;Testing 3D model loading&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&quot;/blogs/20211024_3DModel/3DModel.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;
+&lt;div id=&quot;museum_area&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;button_area&quot;&gt;
+    &lt;button type=&quot;button&quot; id=&quot;main_cam&quot;&gt;Main Camera&lt;/button&gt;
+    &lt;button type=&quot;button&quot; id=&quot;cam_1&quot;&gt;Camera 1&lt;/button&gt;
+    &lt;button type=&quot;button&quot; id=&quot;cam_2&quot;&gt;Camera 2&lt;/button&gt;
+    &lt;button type=&quot;button&quot; id=&quot;cam_3&quot;&gt;Camera 3&lt;/button&gt;
+    &lt;button type=&quot;button&quot; id=&quot;cam_4&quot;&gt;Camera 4&lt;/button&gt;
+&lt;/div&gt;&lt;/p&gt;</content><author><name>Stingray</name></author><category term="blog" /><summary type="html">Testing 3D model loading</summary></entry><entry><title type="html">Clay Grip</title><link href="http://localhost:4000/projects/20211023_clay/project/2021/10/23/ClayGrip.html" rel="alternate" type="text/html" title="Clay Grip" /><published>2021-10-23T20:00:00-04:00</published><updated>2021-10-23T20:00:00-04:00</updated><id>http://localhost:4000/projects/20211023_clay/project/2021/10/23/ClayGrip</id><content type="html" xml:base="http://localhost:4000/projects/20211023_clay/project/2021/10/23/ClayGrip.html">&lt;p&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/together.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;I recently bought a pair of new extruders for my 3D printer. The manufacturer also included a small wrench with the extruder. The wrench is used to hold the heater block when swapping the nozzle. It fits the heater block nicely but ergonomically it is quite bad. I suspect it is made from stamped sheet metal, resulting in sharp edges and thin construction. In addition, the wrench is relatively short, providing less leverage when turning the nozzle. I decided to improve the wrench design by making it more comfortable to hold and increasing the lever arm length for more torque.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/wrench1.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The stamped wrench&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;initial-concept&quot;&gt;Initial Concept&lt;/h2&gt;
+&lt;p&gt;I am right-handed so I usually use my right hand to turn the nozzle while the left hand hold the wrench. During the turning process, my left-hand remains stationary. So, the goal of the grip will be to be as comfortable as possible on my left hand. 
+I brainstormed some ideas and realized one of the most comfortable objects to hold I have is the PS5 controller. When holding the controller, your thumb naturally positions itself over the d-pad while the middle, ring, and little finger curls around the cone-shaped end. I would like to recreate the nice feeling of holding a PS5 controller with my grip design. 
+I begin with a sketch drawing. I first used the actual wrench to trace out the outline of it. Then I roughly approximated the outer contour of the controller. Then I added some shading, From the shading of the drawing, I tried to showcase the curves.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/sketch.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Initial drawing of the concept&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;With the basic sketch, I went into SolidWorks and quickly modeled a simple prototype. Since the prototype consists of mostly curved surfaces, I used the multi-material capabilities of my 3D printer. The prototype itself is printed with black PLA plastics while the support material is black PETG. I tried the prototype grip on my hand and immediately realized that it feels inferior compared to the PS5 controller. There are some key areas I identified that need to be improved. First, it is the diameter of the cone, my prototype has a larger diameter, resulting in the middle, ring, and little finger positioned in an awkward position. Second, the geometry around the index finger curves sharply, making it less comfortable. Finally, the index finger extends quite forward. During the nozzle swap, the heater block will be heated up to 200 Celsius. Poking the index finger that much forward could easily result in a burn.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/proto1.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3D printed prototype&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;script src=&quot;/projects/20211023_Clay/claymodel.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;&lt;div id=&quot;museum_area&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;compare it with the 3D model!&lt;/p&gt;
+
+&lt;h2 id=&quot;clay-model&quot;&gt;Clay Model&lt;/h2&gt;
+
+&lt;p&gt;There are certainly many aspects of the initial prototype which can be improved. However, I still think the overall geometry is ok to serve as a baseline. So, I created the skeleton for the clay model with the first prototype by first slicing and then offsetting the contour shapes. The offset is uniformly 6mm. Next, I added a core in the middle to connect these slices. Combined, the skeleton is both rigid and allows me to pack clay around it. The skeleton geometry is even more complex than the prototype. I also used the multi-material capabilities of my 3D printer to print it. This time it was green PLA for the model with black PETG as support.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/skeleton_print.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Printing the skeleton&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/skeleton.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Skeleton model&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;With the skeleton printed, I started to pack clay onto it during the class. The deep slot with the skeleton holds the clay firmly. I used the prototype as a reference to decide how much clay to pack onto. After packing enough clay, I started using the clay tool to gradually shape the model. Compared to the prototype, I smoothed out the geometry on the index finger. Now the gentler curves made it much more comfortable to hold and is distanced more backward from the wrench. I also reduced the diameter of the cone to allow the middle, ring, and little finger to be positioned naturally. When the geometry is roughly settled, I used the metal sheet to smooth out the curves as a final step. 
+The finished clay model feels much better on hand compared to the prototype. Using clay allows me to iteratively adjust the geometry and fine-tune it to perfectly fit my hand. I see the clay modeling process as a useful tool to augment the CAD design process.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/clay1.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20211023_Clay/pics/clay2.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clay model&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Stingray</name></author><category term="Project" /><summary type="html"></summary></entry><entry><title type="html">My cup of coffee 2021 ver</title><link href="http://localhost:4000/blogs/20210929_coffee/blog/2021/09/29/Coffee.html" rel="alternate" type="text/html" title="My cup of coffee 2021 ver" /><published>2021-09-29T00:00:00-04:00</published><updated>2021-09-29T00:00:00-04:00</updated><id>http://localhost:4000/blogs/20210929_coffee/blog/2021/09/29/Coffee</id><content type="html" xml:base="http://localhost:4000/blogs/20210929_coffee/blog/2021/09/29/Coffee.html">&lt;p&gt;&lt;img src=&quot;/blogs/20210929_Coffee/P1_moodboard.svg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/p&gt;</content><author><name>Stingray</name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">E353 Laser Cut Coaster</title><link href="http://localhost:4000/projects/20210928_e353coaster/project/2021/09/28/E353Coaster.html" rel="alternate" type="text/html" title="E353 Laser Cut Coaster" /><published>2021-09-28T23:00:00-04:00</published><updated>2021-09-28T23:00:00-04:00</updated><id>http://localhost:4000/projects/20210928_e353coaster/project/2021/09/28/E353Coaster</id><content type="html" xml:base="http://localhost:4000/projects/20210928_e353coaster/project/2021/09/28/E353Coaster.html">&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;I recently saw a video from Lewis Rossman trying to fix two broken macs from water damage. Repairing modern laptops can be quite expensive and sometimes impossible. I started to feel worried that maybe someday I could also knock over a cup of coffee or a bottle of water. I drink a lot of coffee recently due to the research and coursework. I don’t use a trackpad. Whenever coffee mark got onto my desk, it makes the desk surface quite sticky. From these two experiences, I decided to design some sort of combo coaster that prevents me from knocking down cups and prevent coffee marks from making my desk sticky.&lt;/p&gt;
+
+&lt;h2 id=&quot;initial-design&quot;&gt;Initial Design&lt;/h2&gt;
+&lt;p&gt;The basics design philosophy I had in mind when conceptualizing this project is to prevent joints or slots using acrylic. When dealing with beverages, joints and slots tend to let liquid seep through and it would be a nightmare to clean. Ruling out these two methods, I choose to only use bending to form the final shape. 
+In my first design iteration, I drew the shape on a piece of paper. The geometry of the coaster consists of a base to catch any dripping liquid. A back panel limits the motion of the mug. Two sides prevent mugs from being knocked over. And finally, a sloped top to prevent dust from falling into the mugs. The slope of the top also prevents condensation from falling back into the mugs.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/initial_concept1.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Initial drawing of the concept&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;3d-printed-prototype&quot;&gt;3D Printed Prototype&lt;/h2&gt;
+&lt;p&gt;To experiment with the concept, I designed a 1:4 scale model to test the overall shape and idea. I printed the scaled model on my 3D printer with two 1:4 scale mugs representing my smallest mug and my largest mug.&lt;/p&gt;
+
+&lt;p&gt;From the scaled model, I found out that the sloped bump in the front actually isn’t user friendly and many times I would just bump the bottom of the mug onto it. This will probably cause splashing which defeats the purpose of the coaster. Also, the bump makes it difficult to remove the mug from coaster.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/scaled.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3D printed scale model&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;adding-a-theme&quot;&gt;Adding a Theme&lt;/h2&gt;
+&lt;p&gt;Making a purely functional coaster might not be that interesting. The shape of the coaster looks like a train station and I am also a railway fan. Therefore, I decided to model the coaster as a train station with my all-time favorite train silhouette on the side. I really like the E353 series train, from its futuristic design to its practicality and capability. Whenever I have the chance, I choose to ride it. E353 series was designed by renowned designer Ken Okuyama, whose works include the Ferrari Enzo. The design of the train motivates and inspires me with my own designs. In addition to selecting the train, I also chose a distinctive train station that was served by the E353 series. Kami-Suwa station is on the outskirts of Tokyo. One distinctive feature of the station is a hot spring for foot. Providing comfort and relief for tired travelers.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/e353_1.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/e353_2.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E353 series train&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/kami_suwa_station.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Kami-Suwa station&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/onsen.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The foot hot spring inside of Kami-Suwa station&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I included the sign of the station, the hot spring, and a silhouette of the front view of the E353 series. I decided to leverage the full capabilities of the epilog laser by using complex shapes and texts with the raster engraving function of the epilog laser.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/initial_concept2.jpg&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Coaster sketch with the rough idea of theme&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;test-cut&quot;&gt;Test Cut&lt;/h2&gt;
+&lt;p&gt;Back when I was an undergrad, I used a universal branded laser cutter and never used the raster engraving capabilities. To test the cutting and engraving capabilities of the epilog laser, I created a small test cut with most of the features I would use on the actual part. These features include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Silhouette of the train&lt;/li&gt;
+  &lt;li&gt;A picture of the train&lt;/li&gt;
+  &lt;li&gt;Different shades of gray&lt;/li&gt;
+  &lt;li&gt;ifferent line thickness&lt;/li&gt;
+  &lt;li&gt;A short section of the rail&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/test_cut.PNG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Test cut geometry&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;laser-cutting&quot;&gt;Laser Cutting&lt;/h2&gt;
+
+&lt;p&gt;Test cutting verified the features in the final design. I proceeded with cutting the actual part. The Epilog laser’s power is 50w which requires multiple passes for cutting through 1/8 inch acrylic sheet. I started with one pass of only vector cutting to check the cutting area is within the acrylic sheet.&lt;/p&gt;
+
+&lt;p&gt;Cutting the coaster took around 30 mins.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/laser_cutting.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Laser cutting with the epilog laser&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;acrylic-sheet-bending&quot;&gt;Acrylic Sheet Bending&lt;/h2&gt;
+&lt;p&gt;I bought a simple acrylic sheet bender from eBay. I would say this acrylic sheet bender is pretty much a resistive heater wire embedded in a section of extruded aluminum. The way acrylic sheet bender functions are that the resistive heater quickly heats up a thin strip of acrylic while maintaining the areas around the heated strip cool. Once the acrylic is above the glass transition temperature, it became soft, and bending it is quite easy. Since the resistive heater outputs quite a lot of heat while it is also important to maintain areas outside the heater cool, the sheet bender has water cooling channels inside the extruded aluminum. A pump circulates cold water through the cooling channels.&lt;/p&gt;
+
+&lt;p&gt;There are in total three bends for the coaster, two 90 deg, and one 70 deg. I started with the bottom 90 deg bend followed by the top 70 deg bend. After bending to the desired degree, it takes one to two minutes for the acrylic to cool down and keep its shape. I used the side of my kitchen table as a 90 deg reference and rest the coaster on the table for it to cool down.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/bending.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Acrylic bending setup&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;final-result&quot;&gt;Final Result&lt;/h2&gt;
+&lt;p&gt;I was quite surprised by how the overall design turned out. I felt quite happing to recreate a place I visited multiple times, and a train I really like. I have a 1:160 scaled model of the E353 series and took the opportunity to take pictures of the coaster with the model. What a magnificent sight.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/result1.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/projects/20210928_E353Coaster/pics/result2.JPG&quot; alt=&quot;image&quot; title=&quot;title&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Coaster with scaled model&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Attribution:
+Kami-Suwa station, Onsen: z tanuki, Creative Commons Attribution 3.0
+All other photos: myself, CC-BY-SA&lt;/p&gt;</content><author><name>Stingray</name></author><category term="Project" /><summary type="html">Motivation</summary></entry></feed>
