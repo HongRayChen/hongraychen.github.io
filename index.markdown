@@ -33,3 +33,5 @@ Hongrui Chen, Xingchen Liu
 *ASME IDETC(2020)*, [Paper](https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2020/84003/V11AT11A034/1090229)
  
 ![image](/assets/Fermat_Procedure.PNG)
+
+<p><script src="/assets/gcode_viewer.js" type="module"></script><div id="gcode"></div></p>
