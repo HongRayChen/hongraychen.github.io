@@ -17,7 +17,7 @@ function init() {
         let wid = 700; // window.innerWidth;
         /** @type{number} */
         let ht = 500; // window.innerHeight;
-    camera = new THREE.PerspectiveCamera(60, wid / ht, 1, 100);
+    camera = new THREE.PerspectiveCamera(60, wid / ht, 1, 1000);
     camera.position.set(20, 40, 40);
 
     scene = new THREE.Scene();
@@ -25,8 +25,9 @@ function init() {
     const loader = new GCodeLoader();
     loader.load('/assets/trimmed.gcode', function (object) {
 
-        object.position.set(0, 0, 0);
+        object.position.set(-100, 0, 100);
         scene.add(object);
+
 
         render();
 
@@ -40,7 +41,7 @@ function init() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', render); // use if there is no animation loop
     controls.minDistance = 1;
-    controls.maxDistance = 100;
+    controls.maxDistance = 1000;
     
     window.addEventListener('resize', resize);
 
