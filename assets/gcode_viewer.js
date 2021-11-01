@@ -23,7 +23,7 @@ function init() {
     scene = new THREE.Scene();
     
     const loader = new GCodeLoader();
-    loader.load('/assets/demo.gcode', function (object) {
+    loader.load('/assets/trimmed.gcode', function (object) {
 
         object.position.set(0, 0, 0);
         scene.add(object);
